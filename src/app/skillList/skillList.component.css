@@ -1,0 +1,48 @@
+.icons-wrapper{
+    color: #fff;
+    display:block;
+    margin:0 auto 20px;
+    width:100%;
+    max-width:500px;
+    text-align: center;
+}
+
+.icons-wrapper h2{
+
+}
+
+.icons-wrapper > .icon > a.icon-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.icons-wrapper > .icon:hover{
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.icons-container{
+    
+}
+
+.icon{
+    display:inline-block;
+    min-width:7em;
+    min-height: 7em;
+    text-align: center;
+}
+
+.icon .copy{
+
+}
+
+@media (max-width: 500px){
+    .icons-wrapper{
+        width:100%;
+    }
+
+    .icon{
+        font-size:1em;
+        min-width:6em;
+        min-height:6em;
+    }
+}

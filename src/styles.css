@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+app-root{
+    z-index:3;
+    background-color:#25b4b4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.wrapper{
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#silhouette-container{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index: 2;
+}
+
+#stars-container{
+    margin: 0;
+    /*padding:1em;*/
+    color:#f3f3f3;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3d0f4f+0,000000+100 */
+    background: #3d0f4f; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #3d0f4f 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #3d0f4f 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #3d0f4f 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+  
+#stars{
+    position: absolute;
+    bottom: -4500px;
+    left: -4500px;
+    width: 9000px;
+    height: 9000px;
+    display: block;
+    background-image: url('/assets/images/stars-overlay.png');
+    background-position: 0px,0px;
+    animation: starsRotate 100s linear infinite;
+    -moz-animation: starsRotate 100s linear infinite;
+    -webkit-animation: starsRotate 100s linear infinite;
+}
+
+#grass{
+    bottom:0em;
+    width:100%;
+    background-image:url('/assets/images/grass.png');
+    background-position:bottom;
+    height:135px;
+}
+  
+#landscape{
+    background-color:black;
+    width:100%;
+    height:5em;
+    bottom:0px;
+}

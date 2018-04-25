@@ -1,0 +1,123 @@
+.wrapper{
+}
+  
+#twitter-container{
+    margin-top:50px;
+    height: 80%;
+    opacity: 0.6;
+    width: 255px;
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+}
+  
+  @keyframes starsRotate { /* CSS3 SS */
+    0%   {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);        
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes starsRotate {
+    0%   {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);        
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes starsRotate { 
+    0%   {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);        
+    }      
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+#cliff{
+    height:10em;
+}
+  
+  /* End of stars container */
+  #main-container{
+    z-index:10;
+    position:relative;
+    height:100%;
+  }
+  
+  .bigger-icon{
+    font-size:2rem;
+  }
+  
+  .fa{
+    text-shadow:1px 1px 1px black;
+  }
+  
+  .container, .sidebar{
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .container{
+    max-width:70%;
+  }
+  
+  .sidebar{
+    max-width:30%;
+  }
+  
+  #icons{
+    display:inline-block;
+    font-size:2.5em;
+    text-align:left;
+  }
+  
