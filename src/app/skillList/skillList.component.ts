@@ -10,6 +10,7 @@ export class IconListComponent {
 
     @Input() title?: string;
     @Input() icons: IconContainer[];
+    @Input() iconSize?: string = '3x';
 }
 
 export class IconContainer {

@@ -1,6 +1,13 @@
-<div class="wrapper">
-  <h1>In a nutshell...</h1>
-  <icons-list [title]='techTitle' [icons]='techIcons'></icons-list>
-  <icons-list [title]='personalTitle' [icons]='personalIcons'></icons-list>
-  <icons-list [title]='contactTitle' [icons]='contactIcons'></icons-list>
+<div class='wrapper'>
+  <div class='icons-container'>
+    <icons-list [title]='techTitle' [icons]='techIcons' [iconSize]='techIconSize'></icons-list>
+    <icons-list [title]='personalTitle' [icons]='personalIcons' [iconSize]='personalIconSize'></icons-list>
+    <icons-list [title]='contactTitle' [icons]='contactIcons' [iconSize]='contactIconSize'></icons-list>
+  </div>
+  <div class='about-me'>
+    <h1>Gary Luck</h1>
+    <h2>Developer by day.</h2> 
+    <h2>Dad by night.</h2>
+  </div>
+  <div class='invader'></div>
 </div>

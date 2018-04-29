@@ -2,12 +2,12 @@
     <h2 *ngIf='title'>{{title}}</h2>
     <div class='icon' *ngFor='let icon of icons'>
         <a *ngIf='icon.link' [href]='icon.link' class='icon-link'>
-            <fa-icon [icon]='icon.fontIcon' size='3x'></fa-icon>
-            <div *ngIf='icon.title' class='copy'>{{icon.title}}</div>
+            <fa-icon [icon]='icon.fontIcon' [size]='iconSize'></fa-icon>
+            <!-- <div *ngIf='icon.title' class='copy'>{{icon.title}}</div> -->
         </a>
         <ng-container *ngIf='!icon.link'>
-            <fa-icon [icon]='icon.fontIcon' size='3x'></fa-icon>
-            <div *ngIf='icon.title' class='copy'>{{icon.title}}</div>
+            <fa-icon [icon]='icon.fontIcon' [size]='iconSize'></fa-icon>
+            <!-- <div *ngIf='icon.title' class='copy'>{{icon.title}}</div> -->
         </ng-container>
     </div>
 </div>

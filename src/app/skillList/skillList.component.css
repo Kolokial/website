@@ -1,14 +1,10 @@
 .icons-wrapper{
     color: #fff;
     display:block;
-    margin:0 auto 20px;
-    width:100%;
-    max-width:500px;
-    text-align: center;
-}
-
-.icons-wrapper h2{
-
+    border-top:10px solid white;
+    margin-bottom:50px;
+    
+    text-align: left;
 }
 
 .icons-wrapper > .icon > a.icon-link{
@@ -25,24 +21,22 @@
 }
 
 .icon{
-    display:inline-block;
-    min-width:7em;
-    min-height: 7em;
+    display:block;
     text-align: center;
+    margin:1em;
 }
 
 .icon .copy{
-
+    display: block;
 }
 
 @media (max-width: 500px){
     .icons-wrapper{
         width:100%;
+        max-width:70px;
     }
 
     .icon{
-        font-size:1em;
-        min-width:6em;
-        min-height:6em;
+
     }
 }

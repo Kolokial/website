@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import fontawesome, { IconDefinition } from '@fortawesome/fontawesome';
-import { faDatabase, faServer, faRocket, faCode, faMusic, faHeadphones } from '@fortawesome/fontawesome-free-solid';
+import { faDatabase, faServer, faRocket, faCode, faMusic, faHeadphones, faCameraRetro, faAddressCard } from '@fortawesome/fontawesome-free-solid';
 import {
   faHtml5, faJsSquare, faPhp, faLinux,
   faCss3Alt, faWordpress, faPaypal, faAngular, faTrello, faGit, faNodeJs,
@@ -11,7 +11,8 @@ import {
   faStackOverflow,
   faDigitalOcean,
   faAmazon,
-  faBitbucket
+  faBitbucket,
+  faGithub
 } from '@fortawesome/fontawesome-free-brands';
 import { IconContainer } from './skillList/skillList.component';
 
@@ -22,39 +23,37 @@ import { IconContainer } from './skillList/skillList.component';
 })
 export class AppComponent {
 
-  public techTitle = 'Tech';
+  // public techTitle = 'Tech';
+  public techIconSize = '2x';
   public techIcons: IconContainer[] = [
     { title: 'CSS3', fontIcon: faCss3Alt },
     { title: 'HTML5', fontIcon: faHtml5 },
     { title: 'JavaScript', fontIcon: faJsSquare },
     { title: 'PHP', fontIcon: faPhp },
     { title: 'MySQL', fontIcon: faDatabase },
-    { title: 'Linux CLI', fontIcon: faLinux },
     { title: 'Angular', fontIcon: faAngular },
-    { title: 'Digial Ocean', fontIcon: faDigitalOcean },
-    { title: 'PayPal', fontIcon: faPaypal },
     { title: 'WordPress', fontIcon: faWordpress },
-    { title: 'Git', fontIcon: faGit },
-    { title: 'BitBucket', fontIcon: faBitbucket },
-    { title: 'Apache', fontIcon: faServer },
-    { title: 'Font Awesome', fontIcon: faFontAwesome },
     { title: 'SASS', fontIcon: faSass }
   ];
 
-  public personalTitle = 'Me';
+  // public personalTitle = 'Me';
+  public personalIconSize = '2x';
   public personalIcons: IconContainer[] = [
     { title: 'Code', fontIcon: faCode },
     { title: 'Space', fontIcon: faRocket },
     { title: 'Music', fontIcon: faHeadphones },
     { title: 'D&D', fontIcon: faDAndD },
     { title: 'Wishlist', fontIcon: faAmazon, link: 'http://amzn.eu/d7jCBPU/' },
-    { title: 'Gaming', fontIcon: faSteam }
+    { title: 'Gaming', fontIcon: faSteam },
+    { title: 'Photography', fontIcon: faCameraRetro }
   ];
 
-  public contactTitle = 'Comms';
+  public contactIconSize = '1x';
   public contactIcons: IconContainer[] = [
     { fontIcon: faTwitter, link: 'https://twitter.com/LuckGary/' },
     { fontIcon: faLinkedin, link: 'https://www.linkedin.com/in/gary-luck-58aa0941/' },
-    { fontIcon: faStackOverflow, link: 'https://stackoverflow.com/users/1523771/gary' }
+    { fontIcon: faStackOverflow, link: 'https://stackoverflow.com/users/1523771/gary' },
+    { fontIcon: faGithub, link: 'https://github.com/Kolokial' },
+    { fontIcon: faAddressCard, link: 'assets/misc/LuckGary.vcf'}
   ];
 }
