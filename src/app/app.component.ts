@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import fontawesome, { IconDefinition } from '@fortawesome/fontawesome';
-import { faDatabase, faServer, faRocket, faCode, faMusic, faHeadphones, faCameraRetro, faAddressCard } from '@fortawesome/fontawesome-free-solid';
+import { faDatabase, faServer, faRocket, faCode, faMusic, faHeadphones, faCameraRetro, faAddressCard, faSpaceShuttle, faFilePdf } from '@fortawesome/fontawesome-free-solid';
 import {
   faHtml5, faJsSquare, faPhp, faLinux,
   faCss3Alt, faWordpress, faPaypal, faAngular, faTrello, faGit, faNodeJs,
@@ -23,7 +23,6 @@ import { IconContainer } from './skillList/skillList.component';
 })
 export class AppComponent {
 
-  // public techTitle = 'Tech';
   public techIconSize = '2x';
   public techIcons: IconContainer[] = [
     { title: 'CSS3', fontIcon: faCss3Alt },
@@ -36,16 +35,16 @@ export class AppComponent {
     { title: 'SASS', fontIcon: faSass }
   ];
 
-  // public personalTitle = 'Me';
   public personalIconSize = '2x';
   public personalIcons: IconContainer[] = [
     { title: 'Code', fontIcon: faCode },
-    { title: 'Space', fontIcon: faRocket },
-    { title: 'Music', fontIcon: faHeadphones },
+    { title: 'Space', fontIcon: faSpaceShuttle },
+    { title: 'Music', fontIcon: faHeadphones, link: 'To do!' },
     { title: 'D&D', fontIcon: faDAndD },
     { title: 'Wishlist', fontIcon: faAmazon, link: 'http://amzn.eu/d7jCBPU/' },
+    { title: 'Buy me a coffe?', fontIcon: faPaypal, link: 'http://paypal.me/garyluck' },
     { title: 'Gaming', fontIcon: faSteam },
-    { title: 'Photography', fontIcon: faCameraRetro }
+    { title: 'Photography', fontIcon: faCameraRetro, link: 'To do!' }
   ];
 
   public contactIconSize = '1x';
@@ -54,6 +53,7 @@ export class AppComponent {
     { fontIcon: faLinkedin, link: 'https://www.linkedin.com/in/gary-luck-58aa0941/' },
     { fontIcon: faStackOverflow, link: 'https://stackoverflow.com/users/1523771/gary' },
     { fontIcon: faGithub, link: 'https://github.com/Kolokial' },
-    { fontIcon: faAddressCard, link: 'assets/misc/LuckGary.vcf'}
+    { fontIcon: faAddressCard, link: 'assets/misc/LuckGary.vcf' },
+    { fontIcon: faFilePdf, link: 'assets/misc/cvGaryLuck2018.pdf'}
   ];
 }
