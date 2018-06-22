@@ -1,0 +1,14 @@
+:host(app-image-gallery){
+    width: 100%;
+}
+
+.image-gallery {
+
+}
+
+.image-gallery-image {
+    min-width:20%;
+    min-height:100px;
+    background-size: cover;
+    display:inline-block;
+}

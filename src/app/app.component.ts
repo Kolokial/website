@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import fontawesome, { IconDefinition } from '@fortawesome/fontawesome';
-import { faDatabase, faServer, faRocket, faCode, faMusic, faHeadphones, faCameraRetro, faAddressCard, faSpaceShuttle, faFilePdf } from '@fortawesome/fontawesome-free-solid';
+import { faDatabase, faCode, faHeadphones, faCameraRetro, faAddressCard,
+  faSpaceShuttle, faFilePdf } from '@fortawesome/fontawesome-free-solid';
 import {
-  faHtml5, faJsSquare, faPhp, faLinux,
-  faCss3Alt, faWordpress, faPaypal, faAngular, faTrello, faGit, faNodeJs,
-  faNode, faNpm, faDAndD, faFontAwesomeAlt, faFontAwesome, faSass,
-  faSteam,
-  faTwitter,
-  faLinkedin,
-  faStackOverflow,
-  faDigitalOcean,
-  faAmazon,
-  faBitbucket,
-  faGithub
+  faHtml5, faJsSquare, faPhp, faCss3Alt,
+  faWordpress, faPaypal, faAngular,
+  faDAndD, faSass, faSteam, faTwitter, faLinkedin,
+  faStackOverflow, faAmazon, faGithub
 } from '@fortawesome/fontawesome-free-brands';
-import { IconContainer } from './skillList/skillList.component';
+import { IconContainer } from './components/skillList/skillList.component';
 
 @Component({
   selector: 'app-root',
@@ -44,7 +37,7 @@ export class AppComponent {
     { title: 'Wishlist', fontIcon: faAmazon, link: 'http://amzn.eu/d7jCBPU/' },
     { title: 'Buy me a coffe?', fontIcon: faPaypal, link: 'http://paypal.me/garyluck' },
     { title: 'Gaming', fontIcon: faSteam },
-    { title: 'Photography', fontIcon: faCameraRetro, link: 'To do!' }
+    { title: 'Photography', fontIcon: faCameraRetro, link: '/photos' }
   ];
 
   public contactIconSize = '1x';
@@ -54,6 +47,6 @@ export class AppComponent {
     { fontIcon: faStackOverflow, link: 'https://stackoverflow.com/users/1523771/gary' },
     { fontIcon: faGithub, link: 'https://github.com/Kolokial' },
     { fontIcon: faAddressCard, link: 'assets/misc/LuckGary.vcf' },
-    { fontIcon: faFilePdf, link: 'assets/misc/cvGaryLuck2018.pdf'}
+    { fontIcon: faFilePdf, link: 'assets/misc/LuckGaryCV.pdf'}
   ];
 }
