@@ -1,8 +1,10 @@
  image-gallery works!
 <div class="image-gallery" *ngIf="imageObjects">
-  <div class="image-gallery-image" *ngFor="let imagePath of imagePaths;" 
+  <div class="image-gallery-image" *ngFor="let imageObject of imageObjects;" 
+  [style.height.px]="imageObject.height"
   [ngStyle]="{
-    'background-image': 'url(' + imagePath + ')'
+    'background-image': 'url(' + imageObject.path + ')'
   }">
+  {{imageObject.height}}
   </div>
 </div>
