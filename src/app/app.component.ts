@@ -54,6 +54,6 @@ export class AppComponent {
     { fontIcon: faStackOverflow, link: 'https://stackoverflow.com/users/1523771/gary' },
     { fontIcon: faGithub, link: 'https://github.com/Kolokial' },
     { fontIcon: faAddressCard, link: 'assets/misc/LuckGary.vcf' },
-    { fontIcon: faFilePdf, link: 'assets/misc/cvGaryLuck2018.pdf'}
+    { fontIcon: faFilePdf, link: 'assets/misc/LuckGaryCV.pdf'}
   ];
 }
