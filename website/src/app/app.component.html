@@ -1,4 +1,4 @@
-<mat-grid-list cols="4" rowHeight="100px">
+<div class="flex">
   <mat-card class="card" appearance="outlined">
     <mat-card-header>
       <div mat-card-avatar class="header-image"></div>
@@ -14,6 +14,7 @@
       <p>The developer</p>
     </mat-card-content>
     <mat-card-actions>
+      <fa-icon [icon]="faCoffee"></fa-icon>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
     </mat-card-actions>
@@ -39,7 +40,7 @@
       <mat-card-subtitle>Where can you find me?</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>The developer</p>
+      <i class="fa-brands fa-linkedin"></i>
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>LIKE</button>
@@ -60,4 +61,4 @@
       <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
-</mat-grid-list>
+</div>

@@ -7,3 +7,10 @@
   background-image: url("https://media.licdn.com/dms/image/v2/C5603AQGdpdzt4TVkxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516956696937?e=1744848000&v=beta&t=5Z7zKOK6mwdIGoZj0pGfT4oN0AllRM3vCQY31WKAJKM");
   background-size: cover;
 }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
